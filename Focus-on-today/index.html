@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Focus on today</title>
+  </head>
+  <body>
+    <h1 class="title">Focus&nbsp;on <span>Today</span></h1>
+    <div class="card">
+      <h2 class="subtitle">Today</h2>
+      <div class="sun-icon">
+        <img class="sun" src="./images/sun.svg" alt="sun" />
+        <img class="absolute eye1" src="./images/eye1.svg" alt="" />
+        <img class="absolute eye2" src="./images/eye2.svg" alt="" />
+        <img class="absolute mouth" src="./images/mouth.svg" alt="" />
+      </div>
+      <p class="progress-label">Raise the bar by completing your goals!</p>
+      <div class="progress-bar">
+        <div class="progress-value">
+            <span></span>
+        </div>
+      </div>
+      <p class="error-label">Please set all the 3 goals!</p>
+
+      <div class="flex-container">
+        <div class="goal-container">
+            <div class="custom-checkbox">
+                <img src="./images/check-icon.svg" alt="check-icon">
+            </div>
+            <input id="first" class="goal-input" type="text" placeholder="Add new goal...">
+        </div>
+        <div class="goal-container">
+            <div class="custom-checkbox">
+                <img src="./images/check-icon.svg" alt="check-icon">
+            </div>
+            <input id='second' class="goal-input" type="text" placeholder="Add new goal...">
+        </div>
+        <div class="goal-container">
+            <div class="custom-checkbox">
+                <img src="./images/check-icon.svg" alt="check-icon">
+            </div>
+            <input id="third" class="goal-input" type="text" placeholder="Add new goal...">
+        </div>
+      </div>
+      <p class="quote">“Move one step ahead, today!”</p>
+      <p class="made-with">Made with ❤️ by Tanveer Procodrr</p>
+
+    </div>
+  </body>
+</html>

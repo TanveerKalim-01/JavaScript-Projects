@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+h2 {
+    text-align: center;
+}
+.container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+h1 {
+    
+    font-size: 4rem;;
+}
+span {
+    color: brown;
+    display: inline-flex;
+    align-items: center;
+}
+span::after {
+    content: " ";
+    display: inline-block;
+    width: 2px;
+    height: 60px;
+    margin-left: 4px;
+    background-color: black;
+   
+
+}

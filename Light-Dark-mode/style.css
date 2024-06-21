@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family :sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    min-height: 100vh;
+    margin-inline: auto;
+    transition: color 0.5s ease-in;
+    padding: 0px 5%;
+}
+.box {
+    border: 1px solid blueviolet;
+    padding: 16px;
+    margin-top: 16px;
+    color: black;
+    background-color: white;
+}
+
+#box:checked + .box {
+    background-color: black;
+    color: white;
+}
+
+.dark {
+    color: white; 
+    background-color:black;
+}

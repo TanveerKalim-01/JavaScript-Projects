@@ -1,0 +1,186 @@
+*  {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #48A30012;
+    padding: 16px 16px 56px;
+}
+
+.title {
+    text-align: center;
+    color: #48A300;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 46px;
+}
+.title span {
+    color : #61481C
+}
+
+.card {
+    max-width: 660px;
+    border-radius: 16px;
+    background-color: #FBFBFB;
+    padding: 28px 42px 56px;
+    margin-inline: auto;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.2)
+}
+.card h2 {
+    display: inline-block;
+    font-size: 32px;
+}
+.sun-icon {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: transform 0.20s linear
+}
+.sun-icon:hover{
+    transform: scale(1.2);
+}
+.sun {
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg);}
+}
+
+.sun-icon .eye1 {
+    top: 22px;
+    left: 20px;
+}
+.sun-icon .eye2 {
+    top:22px;
+    right:20px;
+}
+.sun-icon .mouth {
+    top: 27px;
+    left: 22px;
+}
+.absolute {
+    position: absolute;
+}
+.progress-label {
+    color: #858585;
+    font-size: 14px;
+}
+.progress-bar {
+    border-radius: 16px;
+    background-color:  #48A3001A;
+    height: 25px;
+    margin-block: 18px;
+}
+.progress-value {
+    border-radius: 16px;
+    height: 100%;
+    background-color: #48A300;
+    width : 0;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+}
+.progress-value span {
+    color: #EEFFE0;
+    font-size: 10px;
+    padding-left: 20px;
+    min-width: max-content;
+    display: inline-block;
+    box-sizing: content-box;
+}
+.error-label {
+    color: #FF5151;
+    font-size: 14px;
+   visibility: hidden;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}.goal-container {
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #0000001A;
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    overflow: hidden;
+}
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #61481C4D;
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.custom-checkbox img {
+    display: none;
+}
+
+.custom-checkbox.completed img {
+    display: block;
+}
+.custom-checkbox.completed {
+    background-color: #48A300;
+    border-color: #48A300;
+}
+.custom-checkbox.completed + .goal-input {
+    text-decoration-line: line-through;
+    color: #48A300;
+}
+.goal-input {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    flex-grow: 1;
+    padding-block: 27px;
+    padding-left: 22px;
+    border: none; 
+    outline: none
+}
+.goal-input::placeholder {
+    color: #D9D9D9;
+    font-size: 16px;
+}
+.quote {
+    text-align: center;
+    font-weight: 500;
+    margin-top:54px;
+    margin-bottom: 66px;
+}
+.made-with {
+    text-align: center;
+    font-size: 10px;
+    color: #858585;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .card {
+        padding: 16px
+    }
+
+    .card h2 {
+        font-size: 24px;
+        margin-block: 1rem;
+    }
+    .flex-container {
+        gap: 32px
+    }
+    .quote {
+        margin-block: 28px
+    }
+}

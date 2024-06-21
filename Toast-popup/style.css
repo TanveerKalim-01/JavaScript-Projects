@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-inline: auto;
+}
+
+.container select,
+.container input,
+button {
+    padding: 6px 8px;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+input[type='range'] {
+    padding-inline: 0;
+    flex-grow: 1
+}
+
+.show-toast-btn {
+    border-radius: 4px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+.show-toast-btn[disabled] {
+    cursor: not-allowed;
+}
+
+.show-toast-btn:hover {
+    background-color: rgba(10, 117, 117, 0.588);
+}
+
+.tc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: fixed;
+}
+
+.tc.top-left {
+    top: 1rem;
+    left: 1rem
+}
+
+.tc.top-right {
+    top: 1rem;
+    right: 1rem;
+}
+
+.tc.bottom-left {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.tc.bottom-right {
+    bottom: 1rem;
+    right: 1rem
+}
+
+.toast {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+    background-color: pink;
+    border-radius: .25rem;
+    box-shadow: 0 4px 10px #00000040;
+}
+
+.toast.out-left {
+    animation: outLeft 0.5s ease-in;
+}
+
+.toast.out-right {
+    animation: outRight 0.5s ease-in;
+}
+
+.toast.in-left {
+    animation: inLeft 0.5s ease-in forwards;
+}
+
+.toast.in-right {
+    animation: inRight 0.5s ease-in forwards;
+}
+
+@keyframes outLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes inLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+@keyframes outRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes inRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.toast .close-btn {
+    cursor: pointer;
+}
+
+.toast.success {
+    background-color: lightgreen;
+}
+
+.toast.success::before {
+    content: "✓";
+}
+
+.toast.warning {
+    background-color: rgb(223, 198, 37);
+}
+
+.toast.warning::before {
+    content: "⚠";
+}
+
+.toast.err {
+    background-color: rgba(255, 0, 0, 0.654);
+}
+
+.toast.err::before {
+    content: "✗";
+}
+
+.toast.info {
+    background-color: rgb(101, 193, 224);
+}
+
+.toast.info::before {
+    content: "ⓘ";
+}

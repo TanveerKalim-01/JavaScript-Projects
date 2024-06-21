@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Toast Popup</title>
+  </head>
+  <body>
+    <h3>Toast Popup</h3>
+    <hr />
+    <div class="container">
+      <select class="horizontal">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+      <select class="vertical">
+        <option value="top">Top</option>
+        <option value="bottom">Bottom</option>
+      </select>
+      <select class="toast-type">
+        <option value="success">Success</option>
+        <option value="warning">Warning</option>
+        <option value="err">Error</option>
+        <option value="info">Info</option>
+      </select>
+      <input
+        class="toast-inp"
+        value="This is a toast message!"
+        type="text"
+        required
+      />
+      <div class="range-container">
+        <label for="duration">Duration</label>
+        <input
+          type="range"
+          name="duration"
+          id="duration"
+          min="3"
+          max="10"
+          value="5"
+        />
+      </div>
+      <button  class="show-toast-btn">Show Toast</button>
+    </div>
+    <div class="tc top-left"></div>
+      <div class="tc top-right"></div>
+      <div class="tc bottom-left"></div>
+      <div class="tc bottom-right"></div>
+  </body>
+</html>

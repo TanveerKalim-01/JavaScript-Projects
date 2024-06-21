@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 ;
+    font-family: sans-serif;
+    text-align: center;
+}
+.meme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 160px;
+    margin-inline: auto;
+    margin-top: 12px;
+    transition: max-width 0.25s ease-out;
+    cursor: pointer;
+}
+.meme-btn:hover {
+    max-width: 200px;
+}
+.meme-btn:hover .pipe {
+    width: 5px
+}
+.meme-btn:hover span {
+    letter-spacing: 2px;
+}
+
+.meme-btn span {
+    font-weight: 600;
+    color: rgba(58, 143, 58, 0.793);
+    transition: letter-spacing 0.25s ease-out;
+    /* flex-grow: 1; */
+}
+.pipe {
+    height: 36px;
+    width: 3px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+.card {
+    background-color: rgb(247, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 16px;
+    padding: 20px 50px;
+    display: inline-flex;
+    margin-inline: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+    max-width: 450px;
+    border-radius: 8px;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-inline: auto
+}
+img:not([src]), img:not([src]) + p {
+    display: none;
+}
+
+ p {
+    margin: 0;
+    font-size: 12px;
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+}

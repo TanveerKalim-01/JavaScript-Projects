@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Bill splitter app</title>
+  </head>
+
+  <body>
+    <h1>Bill Splitter</h1>
+    <div class="container">
+      <div class="bill-input-container">
+        <div class="bill-input">
+          <label for="amount">Bill</label>
+          <div class="input-icon">
+            <span>₹</span>
+            <input type="number" id="amount" class="amount" />
+          </div>
+        </div>
+        <div class="tip-container">
+          <label class="tip-text">Select Tip</label>
+          <div class="tip-btns-container">
+            <button disabled class="btn">5%</button>
+            <button disabled class="btn">10%</button>
+            <button disabled class="btn">15%</button>
+            <button disabled class="btn">25%</button>
+            <button disabled class="btn">50%</button>
+            <button disabled class="btn">75%</button>
+          </div>
+          <input
+            type="number"
+            disabled
+            placeholder="Custom Tip"
+            class="custom-tip-input"
+          />
+        </div>
+        <div class="people-container">
+          <label class="people-text">Number of People</label>
+          <input
+            type="number"
+            disabled
+            placeholder="No of People"
+            class="people-input"
+          />
+        </div>
+        <button disabled class="generate">Generate Bill</button>
+      </div>
+      <div class="final-bill-container">
+        <div class="tip-amount">
+          <h4>Tip Amount</h4>
+          <span></span>
+        </div>
+        <div class="total">
+          <h4>Total</h4>
+          <span></span>
+        </div>
+        <div class="person-bill">
+          <h4>Each Person Bill</h4>
+          <span></span>
+        </div>
+        <button disabled id="reset-btn">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
