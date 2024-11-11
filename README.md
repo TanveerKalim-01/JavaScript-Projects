@@ -8,7 +8,7 @@
 - [Telephone Fromatter](https://telephone-formatter.netlify.app)
 - [Light Dark Theme](https://dual-theme-app.netlify.app)
 - [Memes app](https://my-memes-app.netlify.app/)
-- [Toast Popup](https://velvety-churros-b21473.netlify.app/)
+- [Toast Popup](https://toast-popup.netlify.app)
 - [Search Indian College](https://search-indian-clg.netlify.app/)
 - [Multi Typing](https://multi-typing-app.netlify.app/)
 - [Bill Splitter app](https://my-bill-split-app.netlify.app/)
